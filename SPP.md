@@ -41,6 +41,11 @@ I could say it's a project of exploring home automation, web services and digita
 
 Since I am still waiting on some crucial parts for the hardware part of my MAIN project (LEDs), I will start with "side projects" (website, RPI setup) first so I don't waste time during the holidays. 
 
+## Languages 
+- I think I will use language C/C++ for the LEDs part. Since I will be writing arduino code for the NodeMCU.  
+- For the RPI part I believe I will dig into bash and some python scripting.  
+- Website part is pretty standard. Backend will be, hopefully, done on already mentioned RPI. Frontend includes basic html, css, javascript in connection with Angluar framewrork. 
+
 ## Hint
 If you have an ultrawide monitor (I don't), this SPP, I hope, streches over 10-20 lines. So I am safe. ;)
 
