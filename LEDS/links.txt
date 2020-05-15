@@ -1,0 +1,15 @@
+
+pyaudio issues
+https://stackoverflow.com/questions/33513522/when-installing-pyaudio-pip-cannot-find-portaudio-h-in-usr-local-include
+and
+https://github.com/lneuhaus/pysine/issues/4
+
+installing updated arduino with board manager:
+https://askubuntu.com/questions/107619/how-to-install-the-latest-arduino-ide/913537#913537
+
+Arduino esp8266 package:
+http://arduino.esp8266.com/stable/package_esp8266com_index.json 
+
+esp8266 arduino ide addon:
+https://askubuntu.com/questions/913578/esp8266-arduino-ide-addon
+
