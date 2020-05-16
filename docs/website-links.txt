@@ -39,4 +39,6 @@ https://github.com/angular/components/issues/17503
 Backend tutorial:
 https://www.youtube.com/watch?v=a30flH_q5-A
 
+Ed explains custom api mongoose structure/architecture here:
+https://youtu.be/vjf774RKrLc?t=1384
 
