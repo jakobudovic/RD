@@ -1,5 +1,4 @@
 // A custom template/datastructure for tasks
-
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
@@ -15,8 +14,7 @@ let Task = new Schema({
     },
     date: {
         type: Date,
-        default: Date.now,
-        required: true,
+        default: Date.now
     },
     important: {
         type: Boolean,

@@ -3,8 +3,11 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
+const MongoClient = require('mongodb').MongoClient;
+
+
 // import our Task schema
-import Task from './models/Task';
+import Task from './models/task';
 
 const app = express();
 const router = express.Router();
@@ -12,21 +15,28 @@ const router = express.Router();
 app.use(cors());
 app.use(bodyParser.json());
 
-// mongoose.connect('mongodb://localhost:27017/issues');
-/*
-mongoose.connect('');
+// ------------------------------------------------------------------------------------------------
+// connecting to mongoDB
+const uri = 'mongodb+srv://userJakob:pass@websitecluster-jrc1w.mongodb.net/test?retryWrites=true&w=majority'
 
+mongoose.connect(uri)
 const connection = mongoose.connection;
 
 connection.once('open', () => {
-    console.log('MongoDB database connection established successfully!');
+    console.log('\nMongoDB database connection established successfully!\n');
 });
+
+// 
+/*
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("MyFirstDB").collection("tasks");
+  // perform actions on the collection object
+  console.log("Connected to a mongoDB\n");
+  // client.close();
+});
+listDatabases(client);
 */
-
-// app.get('/', (req, res) => res.send("Hello world!"));
-
-// different routes
-app.route
 
 // Retrieve all tasks
 router.route('/tasks').get((req, res) => {
@@ -94,5 +104,14 @@ router.route('/tasks/delete/:id').get((req, res) => {
 
 app.use('/', router);
 
+
 var port = 4000;
 app.listen(port, () => console.log(`Express server is running on port ${port}.\n`));
+
+
+function listDatabases(client){
+    databasesList = client.db().admin().listDatabases();
+ 
+    console.log("Databases:");
+    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
