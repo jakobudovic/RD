@@ -1,0 +1,42 @@
+Spotify API:
+https://developer.spotify.com/documentation/web-api/
+
+Spotify API tutorial, example:
+https://developer.spotify.com/documentation/web-api/quick-start/
+
+Spotify SDK playback tutorial: 
+https://developer.spotify.com/documentation/web-playback-sdk/quick-start/
+
+Spotify SDK player API documentation (long):
+https://developer.spotify.com/documentation/web-playback-sdk/reference/
+
+A full list of the objects returned by the endpoints of the Spotify Web API:
+https://developer.spotify.com/documentation/web-api/reference/object-model/
+
+Spotify auth tutorial example (check article for code):
+https://www.youtube.com/watch?v=_Cic2D3-gjM
+https://devdactic.com/ionic-spotify-app-oauth/
+
+And part 2 (didn't watch yet): 
+https://www.youtube.com/watch?v=TougVPBm7Sw
+
+
+Article on MEAN stack app:
+https://angular-templates.io/tutorials/about/learn-how-to-build-a-mean-stack-application
+
+Android notifications:
+https://loopback.io/doc/en/lb3/Push-notifications-for-Android-apps.html
+
+MEAN stack app template model GIT:
+https://github.com/AngularTemplates/learn-how-to-build-a-mean-stack-application/tree/master/server
+
+Test yout API:
+https://reqres.in/
+
+Angular material update thread!:
+https://github.com/angular/components/issues/17503
+
+Backend tutorial:
+https://www.youtube.com/watch?v=a30flH_q5-A
+
+
