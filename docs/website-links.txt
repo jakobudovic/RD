@@ -45,3 +45,6 @@ https://youtu.be/vjf774RKrLc?t=1384
 YT tutorial connecting mongoDB atlas cloud with node:
 https://www.youtube.com/watch?v=Qn0SOL8vK8w
 
+mongoDB nodeJS connection code a zgornji tutorial:
+https://github.com/Saturday-Developer/MongoDB-connection-using-Node-JS
+
