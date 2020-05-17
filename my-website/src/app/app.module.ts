@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 import { TaskService } from './task.service';
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -20,7 +21,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent, ListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
