@@ -23,4 +23,5 @@ let Task = new Schema({
 });
 
 // We give model with name 'Task' a schema Task, defined above
-export default mongoose.model('Task', Task);
+// export default mongoose.model('Task', Task);
+module.exports = Task = mongoose.model('Task', Task);

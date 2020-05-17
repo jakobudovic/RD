@@ -42,3 +42,6 @@ https://www.youtube.com/watch?v=a30flH_q5-A
 Ed explains custom api mongoose structure/architecture here:
 https://youtu.be/vjf774RKrLc?t=1384
 
+YT tutorial connecting mongoDB atlas cloud with node:
+https://www.youtube.com/watch?v=Qn0SOL8vK8w
+
