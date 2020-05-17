@@ -2,6 +2,7 @@ import express from 'express';
 const Task = require('../models/task');
 const router = express.Router();
 
+/*
 router.post('/', (req, res) => {
 
     let task = new Task(req.body);
@@ -14,6 +15,7 @@ router.post('/', (req, res) => {
 			res.status(400).send('Failed to create new record');
 		});
   });
+*/
 
 // Retrieve all tasks
 router.route('/tasks').get((req, res) => {
