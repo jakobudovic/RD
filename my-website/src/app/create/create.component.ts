@@ -10,6 +10,8 @@ import { TaskService } from '../task.service';
   styleUrls: ['./create.component.scss'],
 })
 export class CreateComponent implements OnInit {
+  createForm: FormGroup;
+
   constructor(
     private taskService: TaskService,
     private fb: FormBuilder,

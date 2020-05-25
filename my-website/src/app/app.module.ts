@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ const routes: Routes = [
     MatCardModule,
     MatButtonModule,
     MatTableModule,
+    MatSnackBarModule,
   ],
   providers: [TaskService],
   bootstrap: [AppComponent],
