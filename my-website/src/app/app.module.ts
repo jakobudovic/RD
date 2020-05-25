@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
     AboutComponent,
     ListComponent,
     CreateComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
