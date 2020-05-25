@@ -25,9 +25,11 @@ import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
+  { path: 'create', component: CreateComponent },
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'list', component: ListComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
 ];
 
 @NgModule({
