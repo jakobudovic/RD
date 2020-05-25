@@ -38,6 +38,6 @@ export class TaskService {
   }
 
   deleteTask(id) {
-    return this.http.get(`${this.URI}/issues/delete/${id}`);
+    return this.http.get(`${this.URI}/tasks/delete/${id}`);
   }
 }
