@@ -1,0 +1,7 @@
+1. run backend
+
+jakob@j-thinkpad-x1-carbon-2nd:~/Documents/git/RD/backend$ npm run dev
+
+2. run frontend
+
+jakob@j-thinkpad-x1-carbon-2nd:~/Documents/git/RD/my-website$ ng serve
