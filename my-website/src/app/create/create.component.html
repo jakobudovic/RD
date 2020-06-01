@@ -29,7 +29,7 @@
         ></textarea>
       </mat-form-field>
 
-      <mat-form-field appearance="outline">
+      <mat-form-field appearance="outline" class="date">
         <mat-label>Due date</mat-label>
         <input matInput type="date" formControlName="date" value="2069-4-20"
         min="{{myDate | date:'yyyy-MM-dd'}}" max="2069-4-20" #date/>
