@@ -27,7 +27,11 @@ export class CreateComponent implements OnInit {
 
 	// function to add task, using task service
 	addTask(title, description, date, important) {
-		this.taskService.addTask(title, description, date, important).subscribe(() => {
+		let important_bool = false;
+		if (important === 'High') {
+			important_bool = true;
+		}
+		this.taskService.addTask(title, description, date, important_bool).subscribe(() => {
 			this.router.navigate([ '/list' ]);
 		});
 	}
