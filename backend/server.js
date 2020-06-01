@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import bodyParser from 'body-parser'; 
+import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
 const MongoClient = require('mongodb').MongoClient;
@@ -9,14 +9,14 @@ const assert = require('assert');
 const app = express();
 
 // connecting to mongoDB
-const URI = 'mongodb+srv://userJakob:<pass>@websitecluster-jrc1w.mongodb.net/MyFirstDB?retryWrites=true&w=majority';
+const URI = 'mongodb+srv://userJakob:coolpass@websitecluster-jrc1w.mongodb.net/MyFirstDB?retryWrites=true&w=majority';
 
-mongoose.connect(URI , { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(URI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const connection = mongoose.connection;
 
 connection.once('open', () => {
-    console.log('MongoDB database connection established successfully!\n');
+	console.log('MongoDB database connection established successfully!\n');
 });
 
 app.use(cors());
