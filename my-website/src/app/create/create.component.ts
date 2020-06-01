@@ -14,6 +14,7 @@ import { TaskService } from '../task.service';
 })
 export class CreateComponent implements OnInit {
 	createForm: FormGroup;
+	myDate = new Date();
 
 	constructor(private taskService: TaskService, private fb: FormBuilder, private router: Router) {
 		this.createForm = this.fb.group({
