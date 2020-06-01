@@ -1,6 +1,6 @@
 <div>
   <br />
-  <mat-card>
+  <mat-card class="wrapper">
     <section class="mat-typography">
       <h3>Create A New Task</h3>
     </section>
@@ -21,19 +21,21 @@
       </mat-form-field>
 
       <mat-form-field class="field-full-width" appearance="outline">
+        <mat-label>Write a description of the task</mat-label>
         <textarea
         matInput
-        placeholder="Description"
         formControlName="description"
         #description
         ></textarea>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
+        <mat-label>Date</mat-label>
         <input matInput placeholder="Date" formControlName="date" #date />
       </mat-form-field>
 
       <mat-form-field appearance="outline">
+        <mat-label>Important</mat-label>
         <mat-select
         placeholder="Important"
           formControlName="important"
