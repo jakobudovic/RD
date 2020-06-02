@@ -36,6 +36,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'create', component: CreateComponent },
   { path: 'edit/:id', component: EditComponent },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '404' },
 ];
 
 @NgModule({
