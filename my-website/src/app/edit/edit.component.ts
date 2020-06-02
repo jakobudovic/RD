@@ -6,6 +6,8 @@ import { TaskService } from '../task.service';
 import { Task } from '../task.model';
 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+// import { MatSnackBar } from '@angular/material/snack-bar';
+
 // import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -59,9 +61,9 @@ export class EditComponent implements OnInit {
 
 	updateTask(title, description, date, important) {
 		this.taskService.updateTask(this.id, title, description, date, important).subscribe(() => {
-			// this.snackBar.open('Task updated successfully', 'OK', {
-			// duration: 3000
-			// });
+			this.snackBar.open('Task updated successfully', 'OK', {
+				duration: 3000
+			});
 		});
 	}
 }
