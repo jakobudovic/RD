@@ -5,8 +5,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { TaskService } from '../task.service';
 import { Task } from '../task.model';
 
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-// import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 // import { MatButtonModule } from '@angular/material/button';
 
@@ -26,7 +25,7 @@ export class EditComponent implements OnInit {
 		private fb: FormBuilder,
 		private router: Router,
 		private route: ActivatedRoute,
-		private snackBar: MatSnackBarModule
+		private snackBar: MatSnackBar
 	) {
 		this.createForm();
 	}
@@ -45,10 +44,7 @@ export class EditComponent implements OnInit {
 		this.route.params.subscribe((params) => {
 			console.log('params: ', params);
 			this.id = params.id;
-			console.log('before');
 			this.taskService.getTaskById(this.id).subscribe((res) => {
-				console.log('after');
-
 				console.log('res: ', res);
 				this.task = res;
 				this.updateForm.get('title').setValue(this.task.title);
@@ -60,9 +56,17 @@ export class EditComponent implements OnInit {
 	}
 
 	updateTask(title, description, date, important) {
-		this.taskService.updateTask(this.id, title, description, date, important).subscribe(() => {
+		let important_bool = false;
+		if (important === 'High') {
+			important_bool = true;
+		}
+		console.log(important);
+
+		this.taskService.updateTask(this.id, title, description, date, important_bool).subscribe(() => {
 			this.snackBar.open('Task updated successfully', 'OK', {
-				duration: 3000
+				duration: 3000,
+				horizontalPosition: 'center',
+				verticalPosition: 'top'
 			});
 		});
 	}
