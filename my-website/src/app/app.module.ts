@@ -28,34 +28,41 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 const routes: Routes = [
-	{ path: 'create', component: CreateComponent },
-	{ path: 'edit/:id', component: EditComponent },
-	{ path: 'list', component: ListComponent },
-	{ path: 'about', component: AboutComponent },
-	{ path: '', redirectTo: 'list', pathMatch: 'full' }
+  { path: 'create', component: CreateComponent },
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'list', component: ListComponent },
+  { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
 ];
 
 @NgModule({
-	declarations: [ AppComponent, HomeComponent, AboutComponent, ListComponent, CreateComponent, EditComponent ],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		HttpClientModule,
-		RouterModule.forRoot(routes),
-		ReactiveFormsModule,
-		MatToolbarModule,
-		MatSliderModule,
-		MatDividerModule,
-		MatCardModule,
-		MatButtonModule,
-		MatTableModule,
-		MatSnackBarModule,
-		MatFormFieldModule,
-		MatSelectModule,
-		MatInputModule
-	],
-	providers: [ TaskService ],
-	bootstrap: [ AppComponent ]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    ListComponent,
+    CreateComponent,
+    EditComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatSliderModule,
+    MatDividerModule,
+    MatCardModule,
+    MatButtonModule,
+    MatTableModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+  ],
+  providers: [TaskService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

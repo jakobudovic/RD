@@ -7,7 +7,6 @@
     <mat-divider></mat-divider>
     <br />
     <form [formGroup]="updateForm" class="update-form">
-
       <mat-form-field class="field-full-width" appearance="outline">
         <mat-label>Enter task title</mat-label>
         <input
@@ -23,16 +22,24 @@
       <mat-form-field class="field-full-width" appearance="outline">
         <mat-label>Write a description of the task</mat-label>
         <textarea
-        matInput
-        formControlName="description"
-        #description
+          matInput
+          formControlName="description"
+          #description
         ></textarea>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="date">
         <mat-label>Due date</mat-label>
-        <input matInput type="date" formControlName="date" [value]="myDate | date:'yyyy-MM-dd'"
-        min="{{ today | date:'yyyy-MM-dd'}}" max="2069-4-20" #date/>
+        <input
+          matInput
+          type="date"
+          formControlName="date"
+          setLocale="fr"
+          [value]="myDate | date: 'yyyy-MM-dd'"
+          min="{{ today | date: 'yyyy-MM-dd' }}"
+          max="2069-4-20"
+          #date
+        />
       </mat-form-field>
 
       <mat-form-field appearance="outline">
@@ -41,7 +48,7 @@
           placeholder="Important"
           formControlName="important"
           #important
-          >
+        >
           <mat-option value="Low">Low</mat-option>
           <mat-option value="High">High</mat-option>
         </mat-select>
@@ -50,21 +57,25 @@
       <mat-divider></mat-divider>
       <br /><br />
       <button mat-raised-button color="accent" routerLink="/list">Back</button
-        >&nbsp;
+      >&nbsp;
 
-        <button
+      <button
         type="submit"
         (click)="
-        updateTask(title.value, description.value, date.value, important.value)
+          updateTask(
+            title.value,
+            description.value,
+            date.value,
+            important.value
+          )
         "
         [disabled]="updateForm.pristine || updateForm.invalid"
         mat-raised-button
         color="primary"
-        >
+      >
         Save
       </button>
       <!--
-    -->
-  </form>
-</mat-card>
+    --></form>
+  </mat-card>
 </div>
