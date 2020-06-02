@@ -50,7 +50,6 @@ export class EditComponent implements OnInit {
         this.updateForm.get('description').setValue(this.task.description);
         this.updateForm.get('important').setValue('Low');
         if (this.task.important) {
-          this.selected = 'High';
           this.updateForm.get('important').setValue('High');
         }
       });
