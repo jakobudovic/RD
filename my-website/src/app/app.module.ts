@@ -29,11 +29,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
-  { path: 'create', component: CreateComponent },
-  { path: 'edit/:id', component: EditComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'list', component: ListComponent },
   { path: 'about', component: AboutComponent },
-  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'create', component: CreateComponent },
+  { path: 'edit/:id', component: EditComponent },
 ];
 
 @NgModule({
