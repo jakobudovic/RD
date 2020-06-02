@@ -26,6 +26,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent },
@@ -61,6 +62,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    MatIconModule,
   ],
   providers: [TaskService],
   bootstrap: [AppComponent],

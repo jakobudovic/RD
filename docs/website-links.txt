@@ -50,3 +50,6 @@ https://github.com/Saturday-Developer/MongoDB-connection-using-Node-JS
 
 Input field hacks:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+Angular material icons list:
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
