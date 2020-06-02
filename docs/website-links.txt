@@ -48,3 +48,5 @@ https://www.youtube.com/watch?v=Qn0SOL8vK8w
 mongoDB nodeJS connection code a zgornji tutorial:
 https://github.com/Saturday-Developer/MongoDB-connection-using-Node-JS
 
+Input field hacks:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
