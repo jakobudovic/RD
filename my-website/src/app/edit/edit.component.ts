@@ -18,6 +18,7 @@ export class EditComponent implements OnInit {
 	id: String;
 	task: any = {};
 	updateForm: FormGroup;
+	today: Date = new Date();
 	myDate: Date = new Date();
 
 	constructor(
@@ -42,11 +43,16 @@ export class EditComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.route.params.subscribe((params) => {
-			console.log('params: ', params);
 			this.id = params.id;
 			this.taskService.getTaskById(this.id).subscribe((res) => {
-				console.log('res: ', res);
+				console.log('res b4 : ', this.task);
+				console.log(res);
 				this.task = res;
+				this.myDate = this.task.date;
+				console.log(this.task.date);
+				console.log(this.task.important);
+
+				console.log('res after: ', this.task);
 				this.updateForm.get('title').setValue(this.task.title);
 				this.updateForm.get('description').setValue(this.task.description);
 				this.updateForm.get('date').setValue(this.task.date);
