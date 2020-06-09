@@ -1,23 +1,31 @@
-.wrapper {
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 70%;
+#wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	#container {
+		width: auto;
+		margin: 0 3%; // this doesn't work?
+	}
 }
 
 .description {
-  padding: 12px;
+	padding: 12px;
 }
 
-/*
 table {
-  width: 100%;
+	width: 100%;
 }
-*/
+
 .mat-column-right {
-  text-align: center;
+	text-align: center;
 }
 
 .important {
-  margin: 0 auto;
-  width: 50%;
+	width: 50%;
+	margin: 0 auto;
 }
