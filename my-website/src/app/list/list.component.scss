@@ -29,3 +29,18 @@ table {
 	width: 50%;
 	margin: 0 auto;
 }
+
+button {
+}
+
+button:hover {
+	background-color: greenyellow;
+	color: black;
+}
+
+button,
+button:hover {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
