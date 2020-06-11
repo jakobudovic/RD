@@ -66,7 +66,8 @@ export class EditComponent implements OnInit {
     this.taskService
       .updateTask(this.id, title, description, date, important_bool)
       .subscribe(() => {
-        this.snackBar.open('Task updated successfully', 'OK', {
+        this.router.navigate(['/list']);
+        this.snackBar.open('Task updated successfully!', 'OK', {
           duration: 3000,
           horizontalPosition: 'center',
           verticalPosition: 'top',
