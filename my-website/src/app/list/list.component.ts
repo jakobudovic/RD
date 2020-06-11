@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Task } from '../task.model';
 import { TaskService } from '../task.service';
@@ -28,7 +29,11 @@ export class ListComponent implements OnInit {
   ];
 
   // injecting services
-  constructor(private taskService: TaskService, private router: Router) {}
+  constructor(
+    private taskService: TaskService,
+    private router: Router,
+    private snackBar: MatSnackBar
+  ) {}
 
   ngOnInit() {
     this.fetchTasks();
@@ -53,6 +58,11 @@ export class ListComponent implements OnInit {
   deleteTask(id) {
     this.taskService.deleteTask(id).subscribe(() => {
       this.fetchTasks(); // we call this to reload tasks
+      this.snackBar.open('Task deleted successfully!', 'OK', {
+        duration: 3000,
+        horizontalPosition: 'center',
+        verticalPosition: 'top',
+      });
     });
   }
 }
